@@ -7,6 +7,7 @@ COPY ./requirements.txt /requirements.txt
 RUN Rscript -e "packages <- readLines('/requirements.txt'); install.packages(packages)"
 
 # COPY ./app/app.R ./app/app.R
+COPY ./report.Rmd /report.Rmd
 COPY entrypoint.sh /
 
 EXPOSE 3838
