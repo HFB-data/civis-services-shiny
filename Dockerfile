@@ -5,8 +5,9 @@ RUN apt-get update && apt-get install -y \
 
 COPY ./requirements.txt /requirements.txt
 RUN Rscript -e "packages <- readLines('/requirements.txt'); install.packages(packages)"
+RUN Rscript -e "devtools::install_github('juba/rmdformats')"
 
-COPY ./report.Rmd /report.Rmd
+# COPY ./report.Rmd /
 COPY entrypoint.sh /
 
 EXPOSE 3838

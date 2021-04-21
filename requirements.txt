@@ -14,3 +14,14 @@ shinyLoadTest
 shinythemes
 shinyTest
 shinyWidgets
+here
+rmdformats
+tidyverse
+reactable
+shinycssloaders
+sf
+rnaturalearth
+rnaturalearthdata
+lwgeom
+devtools
+rgeos
